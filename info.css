@@ -1,0 +1,36 @@
+body {
+    background-image: url('kamalame-kay-1400x933.jpg');
+    background-size: cover;
+   
+}
+
+.content-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the opacity as needed */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.contact-section {
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+}
+.logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px; 
+}
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.google-maps-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #ff5722;
+    font-weight: bold;
+}
