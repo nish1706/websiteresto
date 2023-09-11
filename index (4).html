@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dada's street food resto</title>
+    <link rel="stylesheet" type="text/css" href="order.css">
+</head>
+<body>
+    <h1>Order Form</h1>
+    <form id="order-form"  method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="address">Delivery Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea><br><br>
+
+        <label for="items">Select Items:</label><br>
+        <input type="checkbox" id="mine bouille" name="items[]" value="mine bouille">
+        <label for="mine bouille">mine bouille</label><br>
+        <input type="checkbox" id="mine frite" name="items[]" value="mine frite">
+        <label for="mine frite">mine frite</label><br>
+        <input type="checkbox" id="boulettes" name="items[]" value="boulettes">
+        <label for="boulettes"> boulettes</label><br><br>
+        <input type="checkbox" id="halim" name="items[]" value="halim">
+        <label for="halim"> halim</label><br><br>
+        <input type="checkbox" id="la soupe crabe" name="items[]" value="la soupe crabe">
+        <label for="la soupe crabe"> la soupe crabe</label><br><br>
+        
+
+
+
+
+        <label for="notes">Additional Notes:</label><br>
+        <textarea id="notes" name="notes" rows="4"></textarea><br><br>
+
+        <label for="delivery-time">Preferred Delivery Time:</label>
+        <input type="datetime-local" id="delivery-time" name="delivery-time"><br><br>
+        <a href="#" onclick="goBack()">Go Back</a>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+        <input type="submit" value="Place Order">
+    </form>
+</body>
+</html>
